@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+
+<body>
+    <div class="center">
+        <button id="show-login">Login</button>
+    </div>
+
+<div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Add Activity</h2>
+            <div class="form-element">
+                <input type="text" id="email" placeholder="Activity Name">
+                <select class="minimal" placeholder="Month">
+                    <option>Product</option>
+                    <option>Bills</option>
+                    <option>Entertainment</option>
+                    <option>Others</option>
+                </select>
+            </div>
+
+            <div class="form-element">
+                <input type="date" id="dateInput" class="date-input">
+                <select class="minimal" placeholder="Month">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+
+            </div>
+
+            <div class="form-element">
+                <input type="text" id="email" placeholder="Amount">
+
+                <select class="minimal" placeholder="Payment Via">
+                    <option>BHIM UPI</option>
+                    <option>Net Banking</option>
+                    <option>Cash</option>
+                </select>
+            </div>
+
+            <div class="form-element">
+
+                <input type="text" id="email" placeholder="Note">
+                <select class="minimal" placeholder="Type">
+                    <option>Expense</option>
+                    <option>Incoming</option>
+                </select>
+
+            </div>
+            <div class="form-element">
+                <button>Add</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector("#show-login").addEventListener("click", function () {
+            document.querySelector(".popup").classList.add("active");
+        });
+        document.querySelector(".popup .close-btn").addEventListener("click", function () {
+            document.querySelector(".popup").classList.remove("active");
+        });
+    </script>
+</body>
+
+</html>
